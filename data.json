@@ -1,0 +1,160 @@
+{
+  "summary": [
+    {
+      "Stratégie": "Long Straddle",
+      "Vue de marché": "Forte volatilité attendue (sens indéterminé)",
+      "Strikes": "K = 90",
+      "Prime nette": "8.20$ (débit)",
+      "Breakeven(s)": "81.8$, 98.2$",
+      "Breakeven (% vs spot)": "-9.1%, +9.1%",
+      "Gain max": "41.80$",
+      "Perte max": "-8.16$",
+      "Ratio R/R": "Illimité (call long)"
+    },
+    {
+      "Stratégie": "Long Strangle",
+      "Vue de marché": "Forte volatilité attendue, budget de prime réduit",
+      "Strikes": "K = 85 / 95",
+      "Prime nette": "4.70$ (débit)",
+      "Breakeven(s)": "80.3$, 99.7$",
+      "Breakeven (% vs spot)": "-10.8%, +10.8%",
+      "Gain max": "40.30$",
+      "Perte max": "-4.70$",
+      "Ratio R/R": "Illimité (call long)"
+    },
+    {
+      "Stratégie": "Bull Call Spread",
+      "Vue de marché": "Hausse modérée (poursuite des tensions)",
+      "Strikes": "K = 90 / 100",
+      "Prime nette": "2.60$ (débit)",
+      "Breakeven(s)": "92.6$",
+      "Breakeven (% vs spot)": "+2.9%",
+      "Gain max": "7.40$",
+      "Perte max": "-2.60$",
+      "Ratio R/R": "2.85"
+    },
+    {
+      "Stratégie": "Bear Put Spread",
+      "Vue de marché": "Baisse modérée (désescalade)",
+      "Strikes": "K = 90 / 80",
+      "Prime nette": "2.70$ (débit)",
+      "Breakeven(s)": "87.3$",
+      "Breakeven (% vs spot)": "-3.0%",
+      "Gain max": "7.30$",
+      "Perte max": "-2.70$",
+      "Ratio R/R": "2.70"
+    },
+    {
+      "Stratégie": "Long Butterfly",
+      "Vue de marché": "Stabilisation attendue autour de 90$",
+      "Strikes": "K = 80 / 90 / 100",
+      "Prime nette": "4.80$ (débit)",
+      "Breakeven(s)": "84.8$, 95.2$",
+      "Breakeven (% vs spot)": "-5.8%, +5.8%",
+      "Gain max": "5.16$",
+      "Perte max": "-4.80$",
+      "Ratio R/R": "1.07"
+    },
+    {
+      "Stratégie": "Collar (couverture)",
+      "Vue de marché": "Détention physique + protection du risque de baisse",
+      "Strikes": "Put K=85 / Call K=95",
+      "Prime nette": "0.50$ (crédit)",
+      "Breakeven(s)": "89.5$",
+      "Breakeven (% vs spot)": "-0.6%",
+      "Gain max": "5.50$",
+      "Perte max": "-4.50$",
+      "Ratio R/R": "1.22"
+    }
+  ],
+  "scenarios": [
+    {
+      "Stratégie": "Long Straddle",
+      "pnl": [
+        11.8,
+        1.8,
+        -3.2,
+        -8.2,
+        -3.2,
+        1.8,
+        11.8,
+        21.8
+      ]
+    },
+    {
+      "Stratégie": "Long Strangle",
+      "pnl": [
+        10.3,
+        0.3,
+        -4.7,
+        -4.7,
+        -4.7,
+        0.3,
+        10.3,
+        20.3
+      ]
+    },
+    {
+      "Stratégie": "Bull Call Spread",
+      "pnl": [
+        -2.6,
+        -2.6,
+        -2.6,
+        -2.6,
+        2.4,
+        7.4,
+        7.4,
+        7.4
+      ]
+    },
+    {
+      "Stratégie": "Bear Put Spread",
+      "pnl": [
+        7.3,
+        7.3,
+        2.3,
+        -2.7,
+        -2.7,
+        -2.7,
+        -2.7,
+        -2.7
+      ]
+    },
+    {
+      "Stratégie": "Long Butterfly",
+      "pnl": [
+        -4.8,
+        -4.8,
+        0.2,
+        5.2,
+        0.2,
+        -4.8,
+        -4.8,
+        -4.8
+      ]
+    },
+    {
+      "Stratégie": "Collar (couverture)",
+      "pnl": [
+        -4.5,
+        -4.5,
+        -4.5,
+        0.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5
+      ]
+    }
+  ],
+  "scenario_prices": [
+    70,
+    80,
+    85,
+    90,
+    95,
+    100,
+    110,
+    120
+  ]
+}
